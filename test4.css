@@ -1,0 +1,99 @@
+.menu-bar{
+    background-color: red;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.menu-bar .menu-logo{
+    height: 60px;
+}
+
+.menu-bar .menu-logo figure img{
+    height: 55px;
+    padding-top: 2px;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu ul li a{
+    font-size: 16px;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    cursor: pointer;
+}
+
+.menu ul li a:hover{
+    color: #333;
+}
+
+.btn-bar{
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    padding: 11px;
+    position: fixed;
+    top: 0px;
+    right: 50px;
+    display: none;
+}
+
+.menu-phone{
+    background-color: #333;
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 60px);
+    transition: 0.6s;
+    left: -200%;
+}
+.menu-phone ul{
+    text-align: center;
+}
+.menu-phone ul li a{
+    color: white;
+    padding: 15px;
+    display: block;
+    cursor: pointer;
+}
+.menu-phone ul li a:hover{
+    background-color: rgba(0,0,0,0.5);
+}
+/* mobile phone */
+@media (max-width: 575.98px) { 
+    .menu ul li a{
+        display: none;
+    }
+    .btn-bar{
+        display: block;
+    }
+}
+
+/* landscape */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    
+}
+
+/* ipad*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+}
+
+/* ipad pro */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+
+}
+
+/* Laptop*/
+@media (min-width: 1200px) { 
+
+}

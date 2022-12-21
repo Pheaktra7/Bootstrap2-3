@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="test4.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid menu-bar">
+        <div class="container">
+            <div class="row menu-logo">
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-10">
+                    <figure>
+                        <img src="asset/logo.png" alt="">
+                    </figure>
+                </div>
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Sport</a></li>
+                            <li><a href="#">Abouts</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">FeedBack</a></li>
+                        </ul>
+                    </div> 
+                    <div class="btn-bar">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-phone">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sport</a></li>
+                <li><a href="#">Abouts</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">FeedBack</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+    var btnBar = document.querySelector('.btn-bar');
+    var menuPhone = document.querySelector('.menu-phone');
+    var i = true
+    btnBar.addEventListener('click',function(){
+        if(i){
+            menuPhone.style.left='0';
+        }
+        else{
+            menuPhone.style.left='-200%';
+        }
+        i = !i;
+    });
+</script>
+</html>
