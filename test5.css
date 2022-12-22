@@ -1,0 +1,45 @@
+.content {
+  padding: 10px;
+}
+
+.box{
+  margin: 5px 0px;
+}
+
+.title {
+  padding: 15px;
+  text-align: center;
+  background-color: rgb(175, 173, 173);
+}
+
+/* mobile phone */
+@media (max-width: 575.98px) {
+  .col-3 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+/* landscape */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .col-3 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+/* ipad*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .col-3 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+/* ipad pro */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* Laptop*/
+@media (min-width: 1200px) {
+}
