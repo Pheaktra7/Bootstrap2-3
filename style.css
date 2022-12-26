@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navigation-bar{
+    background-color: #eee;
+    border-bottom: 1px solid #000;
+}
+
+.navigation{
+    display: flex;
+    height: 70px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 10%;
+    padding: 10px;
+    height: 90%;
+}
+
+.logo figure{
+    height: 100%;
+}
+
+.logo figure img{
+    height: 100%;
+}
+
+.search-bar{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 10px 50px;
+}
+
+.search-bar .category{
+    font-size: 17px;
+    width: 25%;
+    padding: 10px 0px;
+    border-right: 1px solid #000;
+}
+
+.search-bar .search-box{
+    width: 65%;
+    display: block;
+    padding: 10px;
+}
+
+.search-bar .search-box input{
+    border: none;
+    outline: 0;
+    display: block;
+    width: 100%;
+    background-color: #eee;
+}
+
+.search-bar .search-icon{
+    width: 10%;
+    padding: 10px;
+    background-color: green;
+}
+
+.search-bar .search-icon i{
+    text-align: center;
+    color: white;
+    margin-left: 10px;
+}
+
+.login-btn{
+    width: 20%;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login-btn .btn-box{
+    width: 49%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    height: 40px;
+    border: none;
+    outline: 0;
+    color: white;
+}
+
+.btn-orange{
+    background-color: orangered;
+}
+
+.btn-green{
+    background-color: green;
+}
+
+.nav-mobile{
+    width: 100%;
+    display: flex;
+    height: 60px;
+    padding: 10px;
+    align-items: center;
+    display: none;
+}
+
+.nav-mobile .btn-bar{
+    position: fixed;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    background-color: green;
+}
+
+.nav-mobile .logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-mobile .logo figure {
+    height: 60px;
+}
+
+.nav-mobile .logo figure img{
+    height: 60%;
+}
+
+
+/* mobile phone */
+@media (max-width: 575.98px) { 
+    .navigation {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: block;
+    }
+}
+
+/* landscape */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .navigation {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: block;
+    }
+}
+
+/* ipad*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .navigation {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: block;
+    }
+}
+
+/* ipad pro */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .search-bar .category{
+        font-size: 14px;
+    }
+}
+
+/* Laptop*/
+@media (min-width: 1200px) { 
+
+}
