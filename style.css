@@ -269,17 +269,17 @@ a{
         display: block;
     }
 
+    .col-9{
+        width: 100%;
+        flex:  0 0 auto;
+    }
+
     .slide-box{
         height: 350px;
     }
 
-    .left-menu ul li a{
-        font-size: 12px;
-        padding: 10px 10px;
-    }
-
-    .left-menu ul li.type{
-        font-size: 16px;
+    .left-menu {
+        display: none;
     }
 
     .slide-box .btn {
