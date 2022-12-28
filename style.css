@@ -17,6 +17,10 @@ a{
 .navigation-bar{
     background-color: #eee;
     border-bottom: 1px solid #000;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
 }
 
 .navigation{
@@ -120,7 +124,7 @@ a{
 }
 
 .nav-mobile .btn-bar{
-    position: fixed;
+    position: absolute;
     padding: 10px 15px;
     border-radius: 5px;
     color: white;
@@ -139,6 +143,16 @@ a{
 
 .nav-mobile .logo figure img{
     height: 60%;
+}
+
+.search-mobile{
+    display: none;
+    width: 100%;
+}
+
+.search-mobile .search-bar{
+    width: 90%;
+    margin: 0px auto;
 }
 
 /* menu bar */
@@ -237,6 +251,53 @@ a{
     background-color: gray;
 }
 
+.item-box{
+    padding: 0px 4px;
+    margin: 10px 0px;
+}
+
+.item-box .box{
+    height: 330px;
+    cursor: pointer;
+    box-shadow: 0px 0px 7px -5px black;
+}
+
+.item-box .box .box-img{
+    width: 100%;
+    height: 70%;
+}
+
+.box-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.caption{
+    width: 100%;
+    height: 30%;
+}
+
+.caption .title{
+    width: 100%;
+    height: 50%;
+}
+
+.caption .title span{
+    padding: 10px 20px;
+}
+
+.caption .price{
+    width: 100%;
+    height: 50%;
+    padding-right: 10px;
+    color: red;
+    text-align: right;
+}
+
+.item-box .box:hover{
+    box-shadow: 1px 1px 7px -3px green;
+}
+
 /* mobile phone */
 @media (max-width: 575.98px) { 
     .navigation {
@@ -246,6 +307,92 @@ a{
     .nav-mobile {
         display: block;
     }
+    .col-9{
+        width: 100%;
+        flex:  0 0 auto;
+        padding: 0px;
+    }
+
+    .search-mobile {
+        display: block;
+        padding: 0px;
+        width: 100%;
+        margin: 5px 0px;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    .slide-box{
+        height: 200px;
+        width: 100%;
+    }
+
+    .left-menu {
+        display: none;
+    }
+
+    .slide-box .btn {
+        display: none;
+    }
+
+    .search-bar .category{
+        font-size: 9px;
+        padding: 7px 0px;
+    }
+    
+    .search-bar .search-box{
+        width: 65%;
+        display: block;
+        padding:  7px;
+    }
+    
+    .search-bar .search-box input{
+        border: none;
+        outline: 0;
+        display: block;
+        width: 100%;
+        background-color: #eee;
+    }
+    
+    .search-bar .search-icon{
+        width: 10%;
+        padding: 7px;
+        background-color: green;
+    }
+    
+    .search-bar .search-icon i{
+        text-align: center;
+        color: white;
+        margin-left: 0px;
+    }
+    .sponsore-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sponsore-box p{
+        font-size: 14px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .sponsore-box .line{
+        width: 100%;
+        display: block;
+        margin-top: 0px;
+    }
+
+    .col-3 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .item-box .box{
+        height: 220px;
+    }
+
 }
 
 /* landscape */
@@ -257,15 +404,8 @@ a{
     .nav-mobile {
         display: block;
     }
-}
 
-/* ipad*/
-@media (min-width: 768px) and (max-width: 991.98px) { 
-    .navigation {
-        display: none;
-    }
-
-    .nav-mobile {
+    .search-mobile {
         display: block;
     }
 
@@ -302,6 +442,73 @@ a{
         display: block;
         margin-top: 0px;
     }
+
+    .col-3 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .item-box .box{
+        height: 300px;
+    }
+}
+
+/* ipad*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .navigation {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: block;
+    }
+
+    .search-mobile {
+        display: block;
+    }
+
+    .col-9{
+        width: 100%;
+        flex:  0 0 auto;
+    }
+
+    .slide-box{
+        height: 350px;
+    }
+
+    .left-menu {
+        display: none;
+    }
+
+    .slide-box .btn {
+        font-size: 13px
+    }
+
+    .sponsore-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sponsore-box p{
+        font-size: 14px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .sponsore-box .line{
+        width: 100%;
+        display: block;
+        margin-top: 0px;
+    }
+
+    .col-3 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .item-box .box{
+        height: 300px;
+    }
 }
 
 /* ipad pro */
@@ -325,6 +532,10 @@ a{
 
     .left-menu ul li.type{
         font-size: 16px;
+    }
+
+    .item-box .box{
+        height: 300px;
     }
 }
 
